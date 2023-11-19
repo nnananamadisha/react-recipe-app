@@ -13,7 +13,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-size: var(--font-size);
+}
 .navbar{
     height: 55px;
-    
+    box-shadow: 0 3px 6px var(--shadow-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
