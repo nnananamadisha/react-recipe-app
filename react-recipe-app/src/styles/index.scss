@@ -136,7 +136,7 @@ a{
     width: 250px;
     background-color: var(--background-color);
     box-shadow: 0 0 0 1000px rgba(0,0,0,0.2), 2px 0 5px var(--shadow-color);
-    animation: getAnimationDuration(.5s) slideInLeft;
+    animation: getAnimationDuration(.3s) slideInLeft;
     //nesting
     .sidebar-link{
         display: block;
@@ -145,6 +145,15 @@ a{
         margin-bottom: 1em;
         color: var(--text-color);
         font-size: 1.1em;
+        transform: translateX(-100%);
+        animation: getAnimationDuration(.3s) slideInLeft forwards;
+        //animation delay
+        @for $i from 1 through 3{ //because we have 3 links
+            &:nth-child(#{$i}){ //target all links
+                animation-delay: #{$i * .1}s;
+                }
+            }
+        }
         &.active{
             border-left-color: var(--primary-color);
         }
@@ -157,11 +166,13 @@ a{
             margin-right: .5em;
         }
     }
-}
+
 
 .container{
     padding-inline: 15vw;
 }
+//import animations file
+@import "partials/animations.scss";
 
 //media queries
 @media screen and (max-width: 768px){
