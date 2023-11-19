@@ -1,27 +1,65 @@
 //import use effect
 import { useState } from "react"
+//import Sidebar component
+import Sidebar from "./Sidebar"
+//import icons
+import { faHome, faList, faCog } from "@fortawesome/free-solid-svg-icons"
 
 export default function Navbar(){
     //state
-    const [showSidebar,, setShowSidebar] = useState(false)
-    return(
-        <div className="navbar container">
-            <a href="#!" className="logo">African<span>Food</span>Cuisine</a>
-            <div className="nav-links">
-                <a href="#!">Home</a>
-                <a href="#!">Recipes</a>
-                <a href="#!">Settings</a>
-            </div>
-            {/* //sidebar */}
-            {/* data binding, if sidebar=true, have sidelist of sidebar & active, else have classlist of just show sidebar */}
-            {/* onclick event listener, when clicked, remove bars and show sidebar */}
-            <div onClick={() => setShowSidebar(!showSidebar)} className={showSidebar ? "sidebar-btn active" : "sidebar-btn"}>
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-            </div>
-        </div>
+    const [showSidebar, setShowSidebar] = useState(false)
+    //array of links
+    const links = [
+        {
+            name: "Home",
+            path: "/",
+            icon: faHome
+        },
+        {
+            name: "Recipes",
+            path: "/recipes",
+            icon: faList
+        },
+        {
+            name: "Settings",
+            path: "/settings",
+            icon: faCog
+        }
+    ]
 
+    function closeSidebar(){
+        setShowSidebar(false)
+    }
+
+    return(
+        // because a component should only return 1 parent component 
+        <>
+            <div className="navbar container">
+                <a href="#!" className="logo">African<span>Food</span>Cuisine</a>
+                <div className="nav-links">
+                    {/* loop through the links array */}
+                    { links.map(link => (
+                        <a href="#!" key={link.name}>{link.name}</a>
+                    )) }
+
+                    {/* <a href="#!">Home</a>
+                    <a href="#!">Recipes</a>
+                    <a href="#!">Settings</a> */}
+                </div>
+                {/* //sidebar */}
+                {/* data binding, if sidebar=true, have sidelist of sidebar & active, else have classlist of just show sidebar */}
+                {/* onclick event listener, when clicked, remove bars and show sidebar */}
+                <div onClick={() => setShowSidebar(true)} className={showSidebar ? "sidebar-btn active" : "sidebar-btn"}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </div>
+            </div>
+            { showSidebar && <Sidebar close={closeSidebar} links={links} />}
+            
+        </>
+        
+       
         
     )
 }
