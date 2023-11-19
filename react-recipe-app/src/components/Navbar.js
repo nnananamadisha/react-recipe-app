@@ -1,6 +1,6 @@
 export default function Navbar(){
     return(
-        <div className="navbar">
+        <div className="navbar container">
             <a href="#!">Africa<span>Food</span>Cousine</a>
             <div className="nav-links">
                 <a href="#!">Home</a>
