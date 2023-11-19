@@ -55,6 +55,7 @@ a{
             letter-spacing: 2px;
             text-transform: uppercase;
             position: relative;
+            font-size: .9em;
             &::before{
                 content: '';
                 display: inline-block;
@@ -123,6 +124,37 @@ a{
                     transform: translate(0, -50%) scale(1) rotate(-45deg);
                 }
             }
+        }
+    }
+}
+//sidebar
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 0 1000px rgba(0,0,0,0.2), 2px 0 5px var(--shadow-color);
+    animation: getAnimationDuration(.5s) slideInLeft;
+    //nesting
+    .sidebar-link{
+        display: block;
+        padding: .5em 1em;
+        border-left: .4em solid transparent;
+        margin-bottom: 1em;
+        color: var(--text-color);
+        font-size: 1.1em;
+        &.active{
+            border-left-color: var(--primary-color);
+        }
+        &:hover{
+            border-left-color: var(--primary-color);
+            background-color: rgba(0,0,0,0.05);
+        }
+        svg{
+            width: 1.2em;
+            margin-right: .5em;
         }
     }
 }
