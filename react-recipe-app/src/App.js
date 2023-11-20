@@ -15,9 +15,17 @@ import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <Router>
+    <Navbar />
+    <div className="container main">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
     </div>
+    <Footer />
+  </Router>
   );
 }
 
