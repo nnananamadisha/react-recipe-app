@@ -1,16 +1,16 @@
 import CustomImage from "./CustomImage"
 
 export default function HeroSection(){
-    const images = [
-        "/images/gallery/biltong.jpg",
-        "/images/gallery/bobotie.jpg",
-        "/images/gallery/bunnychow.jpg",
-        "/images/gallery/chickenfeet.jpg",
-        "/images/gallery/chakalaka.jpg",
-        "/images/gallery/carrot-cake.jpg",
-        "/images/gallery/lamg-sosaties.jpg",
-        "/images/gallery/samp-and-beans.jpg",
-        "/images/gallery/malva-pudding.jpg"
+    const Img = [
+        "/Img/gallery/biltong.jpg",
+        "/Img/gallery/bobotie.jpg",
+        "/Img/gallery/bunnychow.jpg",
+        "/Img/gallery/chickenfeet.jpg",
+        "/Img/gallery/chakalaka.jpg",
+        "/Img/gallery/carrot-cake.jpg",
+        "/Img/gallery/lamg-sosaties.jpg",
+        "/Img/gallery/samp-and-beans.jpg",
+        "/Img/gallery/malva-pudding.jpg",
     ]
     return (
         <div className="section hero">
@@ -20,8 +20,8 @@ export default function HeroSection(){
                 <button className="btn">explore now</button>
             </div>
             <div className="col gallery">
-                { images.map((src, index) => (
-                    <CustomImage key={index} imgagesSrc={src} pt={"90%"} />
+                { Img.map((src, index) => (
+                    <CustomImg key={index} ImgSrc={src} pt={"90%"} />
                 )) }
             </div>
         </div>
