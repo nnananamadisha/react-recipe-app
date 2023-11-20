@@ -2,15 +2,15 @@ import CustomImage from "./CustomImage"
 
 export default function HeroSection(){
     const Img = [
-        "/Img/gallery/biltong.jpg",
-        "/Img/gallery/bobotie.jpg",
-        "/Img/gallery/bunnychow.jpg",
-        "/Img/gallery/chickenfeet.jpg",
-        "/Img/gallery/chakalaka.jpg",
-        "/Img/gallery/carrot-cake.jpg",
-        "/Img/gallery/lamg-sosaties.jpg",
-        "/Img/gallery/samp-and-beans.jpg",
-        "/Img/gallery/malva-pudding.jpg",
+        "/Img/biltong.jpg",
+        "/Img/bobotie.webp",
+        "/Img/bunnychow.jpg",
+        "/Img/chicken-feet.jpg",
+        "/Img/chakalaka.jpg",
+        "/Img/carrot-cake.jpg",
+        "/Img/lamb-sosaties.jpg",
+        "/Img/samp-and-beans.jpg",
+        "/Img/malva-pudding.jpg",
     ]
     return (
         <div className="section hero">
