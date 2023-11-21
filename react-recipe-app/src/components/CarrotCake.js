@@ -26,7 +26,6 @@ const CarrotCake = () => {
                 <li>Gradually add the dry ingredients to the wet ingredients and mix until well combined.</li>
                 <li>Pour the batter into the prepared pan and bake for 30-40 minutes or until a toothpick comes out clean.</li>
                 <li>Let the cake cool completely before frosting. Enjoy!</li>
-                {/* Add more instructions as needed */}
             </ol>
         </div>
     );
