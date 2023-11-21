@@ -5,19 +5,19 @@ export default function Recipes(){
     const recipes = [
         {
             title: "Biltong",
-            image: "/imgages/biltong.jpg",
+            image: "/Img/biltong.jpg",
         }, 
         {
             title: "Bobotie",
-            image: "/img/bobotie.jpg",
+            image: "/Img/bobotie.jpg",
         },
         {
             title: "Bunnychow",
-            image: "/img/bunnychow.jpg",
+            image: "/Img/bunnychow.jpg",
         },
         {
             title: "Chicken-feet",
-            image: "/img/chicken-feet.jpg",
+            image: "/Img/chicken-feet.jpg",
         },
         {
             title: "Chakalaka",
@@ -25,57 +25,22 @@ export default function Recipes(){
         },
         {
             title: "Carrot-cake",
-            image: "/img/carrot-cake.jpg",
+            image: "/Img/carrot-cake.jpg",
         }, 
         {
             title: "Lamb-sosaties",
-            image: "/img/lamb-sosaties.jpg",
+            image: "/Img/lamb-sosaties.jpg",
         },
         {
             title: "Samp-and-beans",
-            image: "/img/samp-and-beans.jpg",
+            image: "/Img/samp-and-beans.jpg",
         },
         {
             title: "Malva-pudding",
-            image: "/img/malva-pudding.jpg",
+            image: "/Img/malva-pudding.jpg",
         },
-        {
-            title: "Biltong",
-            image: "/imgages/biltong.jpg",
-        }, 
-        {
-            title: "Bobotie",
-            image: "/img/bobotie.jpg",
-        },
-        {
-            title: "Bunnychow",
-            image: "/img/bunnychow.jpg",
-        },
-        {
-            title: "Chicken-feet",
-            image: "/img/chicken-feet.jpg",
-        },
-        {
-            title: "Chakalaka",
-            image: "/img/chakalaka.jpg",
-        },
-        {
-            title: "Carrot-cake",
-            image: "/img/carrot-cake.jpg",
-        }, 
-        {
-            title: "Lamb-sosaties",
-            image: "/img/lamb-sosaties.jpg",
-        },
-        {
-            title: "Samp-and-beans",
-            image: "/img/samp-and-beans.jpg",
-        },
-        {
-            title: "Malva-pudding",
-            image: "/img/malva-pudding.jpg",
-        }
-    ].sort(() => Math.random() - 0.5)
+
+    ].sort((a, b) => a.title.localeCompare(b.title));
 
     return (
         <div>
