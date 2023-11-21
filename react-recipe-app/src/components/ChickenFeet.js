@@ -15,7 +15,6 @@ const ChickenFeet = () => {
                 <li>1 teaspoon cayenne pepper (adjust to taste)</li>
                 <li>Salt and pepper to taste</li>
                 <li>2 tablespoons vegetable oil</li>
-                {/* Add more ingredients as needed */}
             </ul>
             <p>Instructions:</p>
             <ol>
@@ -23,7 +22,6 @@ const ChickenFeet = () => {
                 <li>Add chicken feet, paprika, curry powder, cayenne pepper, salt, and pepper. Cook until browned.</li>
                 <li>Add enough water to cover the chicken feet. Simmer until tender.</li>
                 <li>Adjust seasoning to taste. Serve hot.</li>
-                {/* Add more instructions as needed */}
             </ol>
         </div>
     );
