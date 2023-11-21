@@ -2,7 +2,7 @@
     --background-color: #fff;
     --background-light: #fff;
     --shadow-color: rgba(0,0,0,0.2);
-    --primary-color: rgb(255, 0, 86);
+    --primary-color: darkcyan;
     --text-color: #0A0A0A;
     --text-light: #575757;
     --font-size: 16px;
@@ -93,9 +93,6 @@ img{
 }
 
 @import "partials/hero-section.scss";
-@import "partials/improve-section.scss";
-@import "partials/quote-section.scss";
-@import "partials/chiefs-section.scss";
 @import "partials/previous-searches.scss";
 @import "partials/recipes-section.scss";
 

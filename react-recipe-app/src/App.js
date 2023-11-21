@@ -1,3 +1,4 @@
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,7 +11,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Recipes from "./pages/Recipes";
 import Settings from "./pages/Settings";
-
 
 
 function App() {
@@ -26,7 +26,8 @@ function App() {
     </div>
     <Footer />
   </Router>
-  );
+    
+   ) 
 }
 
 export default App;
