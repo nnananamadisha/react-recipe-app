@@ -16,7 +16,6 @@ const Chakalaka = () => {
                 <li>1 teaspoon ground cumin</li>
                 <li>2 tablespoons vegetable oil</li>
                 <li>Salt and pepper to taste</li>
-                {/* Add more ingredients as needed */}
             </ul>
             <p>Instructions:</p>
             <ol>
@@ -24,7 +23,6 @@ const Chakalaka = () => {
                 <li>Add bell peppers, carrots, and tomatoes. Cook until softened.</li>
                 <li>Stir in curry powder, paprika, cumin, salt, and pepper.</li>
                 <li>Add baked beans and simmer until flavors meld. Serve warm.</li>
-                {/* Add more instructions as needed */}
             </ol>
         </div>
     );
