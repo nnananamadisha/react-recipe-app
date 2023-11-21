@@ -16,13 +16,18 @@ export default function RecipeCard({ recipe }) {
 
     return (
         <div className="recipe-card">
-            <CustomImage ImgSrcmgSrc={recipe.image} pt="65%" />
-            <div className="recipe-card-info">
-                <p className="recipe-title">{recipe.title}</p>
+            <CustomImage ImgSrc={recipe.image} pt="65%" />
+            {/* <div className="recipe-card-info"> */}
+            <p className="recipe-title">{recipe.title}</p>
+            <div className="recipe">
                 <p className="recipe-desc">{recipe.description}</p>
-                {recipeComponent}
-                <a className="view-btn" href="#!">VIEW RECIPE</a>
             </div>
+                
+            {recipeComponent}
+            
+            <a className="view-btn" href="#!">Ingredients</a>
+            <p className='recipe-list'>{recipe.ingredients}</p>
+            {/* </div> */}
         </div>
     );
 }
