@@ -17,7 +17,6 @@ const CarrotCake = () => {
                 <li>½ teaspoon salt</li>
                 <li>1 cup chopped nuts (optional)</li>
                 <li>1 cup crushed pineapple, drained</li>
-                {/* Add more ingredients as needed */}
             </ul>
             <p>Instructions:</p>
             <ol>
