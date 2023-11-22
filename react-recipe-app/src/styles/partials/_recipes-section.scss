@@ -64,14 +64,16 @@
     left: 0;
     height: 0;
     width: 100%;
-    background: lightskyblue;
+    //background: lightskyblue;
+    background-color: var(--primary-color);
     transition: 0.2s all;
 }
 .recipe-card:hover::before{
     height: 100%;
 }
 .recipe-card:hover{
-    background: lightskyblue;
+    //background: lightskyblue;
+    background-color: var(--primary-color);
     content: "";
 }
 .recipe-card .recipe{

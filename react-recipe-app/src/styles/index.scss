@@ -1,6 +1,6 @@
 :root{
-    --background-color: #fff;
-    --background-light: #fff;
+    --background-color: rgb(224, 255, 255);
+    --background-light: rgb(224, 255, 255);
     --shadow-color: rgba(0,0,0,0.2);
     --primary-color: darkcyan;
     --text-color: #0A0A0A;
@@ -23,8 +23,8 @@ body{
     font-size: var(--font-size);
     font-family: 'Roboto', sans-serif;
     padding-top: 55px;
-    //background-color: var(--background-light);
-    background: lightcyan;
+    background-color: var(--background-light);
+   
 }
 a{
     text-decoration: none;
