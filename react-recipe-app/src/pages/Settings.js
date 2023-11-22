@@ -5,8 +5,8 @@ import { useState, useEffect } from "react"
 
 export default function Settings(){
     const [settings, setSettings] = useState({
-        "--background-color": "#fff",
-        "--background-light": "#fff",
+        "--background-color": "rgb(224, 255, 255)",
+        "--background-light": "rgb(224, 255, 255)",
         "--primary-color": "rgb(0, 139, 139)",
         "--shadow-color": "rgba(0,0,0,0.2)",
         "--text-color": "#0A0A0A",
@@ -24,8 +24,8 @@ export default function Settings(){
     const [theme, setTheme] = useState("light")
     const themes = [
         {
-            "--background-color": "#fff",
-            "--background-light": "#fff",
+            "--background-color": "rgb(224, 255, 255)",
+            "--background-light": "rgb(224, 255, 255)",
             "--shadow-color": "rgba(0,0,0,0.2)",
             "--text-color": "#0A0A0A",
             "--text-light": "#575757"
