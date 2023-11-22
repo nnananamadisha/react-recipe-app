@@ -9,8 +9,8 @@
     overflow: auto;
     box-shadow: 0 5px 15px var(--shadow-color);
     //background-color: var(--background-color);
-    height: 700px;
-    margin: 1rem;
+    height: 850px;
+    margin: .2rem;
     position: relative;
     box-sizing: border-box;
     padding: 15px;
@@ -64,14 +64,16 @@
     left: 0;
     height: 0;
     width: 100%;
-    background: lightskyblue;
+    //background: lightskyblue;
+    background-color: var(--primary-color);
     transition: 0.2s all;
 }
 .recipe-card:hover::before{
     height: 100%;
 }
 .recipe-card:hover{
-    background: lightskyblue;
+    //background: lightskyblue;
+    background-color: var(--primary-color);
     content: "";
 }
 .recipe-card .recipe{
@@ -79,7 +81,7 @@
     top: 0;
     left: 0;
     text-align: justify;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     display: none;
     transition: 0.2s all;
 }
