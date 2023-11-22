@@ -19,7 +19,8 @@ function App() {
     <Navbar />
     <div className="container main">
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* Home = default route for the parent route */}
+        <Route path="/" element={<Home />} /> 
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>

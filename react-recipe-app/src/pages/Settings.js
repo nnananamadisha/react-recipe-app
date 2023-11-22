@@ -4,6 +4,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { useState, useEffect } from "react"
 
 export default function Settings(){
+    //useState hook to track properties(color variables) in our application
     const [settings, setSettings] = useState({
         "--background-color": "rgb(224, 255, 255)",
         "--background-light": "rgb(224, 255, 255)",
@@ -14,6 +15,7 @@ export default function Settings(){
         "--font-size": "16px",
         "--animation-speed": 1
     })
+    //useEffect hook to directly update the DOM
     useEffect(() => {
         const root = document.documentElement
         for(let key in settings){
