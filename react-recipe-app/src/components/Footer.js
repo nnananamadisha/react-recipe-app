@@ -5,6 +5,7 @@ export default function Footer(){
                 <p className="title">AfricanCuisineHub.com</p>
                 <p>AfricanCuisineHub is where you can satisfy both your soul and palate with a delightful array of recipes from diverse African cuisines. Plus, enjoy our services completely free of charge."</p>
                 <p>&copy; 2023 | All Rights Reserved</p>
+                <p className="names">Coded by Nnanana, Murangi & Karabo</p>
             </div>
             <div className="footer-section">
                 <p className="title">Contact Us</p>
